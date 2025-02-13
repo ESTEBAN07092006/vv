@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)file:///C:/Users/casa/Downloads/pagina%20web%20para%20mi%20novia.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi hermosa novia ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffebf2;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #d63384;
+        }
+        p {
+            font-size: 20px;
+            color: #444;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: rgb(241, 241, 241);
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+        }
+        #contador {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d63384;
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌸 Para mi Nena 🌸</h1>
+        <p>Mi amor, quiero tomarme un momento para decirte cuánto te amo y lo mucho que significas para mí. Cada día a tu lado es un regalo, y no hay palabras suficientes para describir lo afortunado que me siento de tenerte en mi vida.
+
+            Valoro cada detalle que tienes conmigo, cada sonrisa, cada abrazo y cada palabra de aliento. Eres mi refugio, mi felicidad y mi mayor inspiración. Gracias por ser tan increíble, por tu paciencia, tu cariño y por hacerme sentir amado en cada momento.
+            
+            No hay día en el que no agradezca por tenerte. Eres lo mejor que me ha pasado, y quiero que nunca dudes de lo mucho que te amo. 💖</p>
+
+        <h2>⏳ Tiempo juntos ⏳</h2>
+        <div id="contador">1 años, 11 meses, 24 días, 17 horas, 17 minutos y 41 segundos 💖</div>
+
+        <h2>📸 Nuestros momentos juntos 📸</h2>
+        <div class="gallery">
+            <img src="./Para mi hermosa novia ❤️_files/imagen1.jpg.jpg" alt="Foto 1">
+            <img src="./Para mi hermosa novia ❤️_files/WhatsApp Image 2025-02-13 at 4.15.15 PM.jpeg" alt="Foto 2">
+            <img src="./Para mi hermosa novia ❤️_files/WhatsApp Image 2025-02-13 at 4.28.12 PM.jpeg" alt="Foto 3">
+            <img src="./Para mi hermosa novia ❤️_files/WhatsApp Image 2025-02-13 at 4.55.59 PM.jpeg" alt="Foto 4">
+        </div>
+
+        <p>Feliz San Valentín, mi amor ❤️
+
+            Hoy es un día especial, pero para mí, cada día a tu lado lo es. Eres mi razón de sonreír, mi refugio y el amor más puro que he conocido. No hay palabras suficientes para expresar lo mucho que te amo y lo afortunado que me siento de tenerte.
+            
+            Gracias por ser mi todo. Hoy y siempre, mi corazón es tuyo. 💖✨ 💕</p>
+    </div>
+
+    <script>
+        function actualizarContador() {
+            let fechaInicio = new Date("2023-03-02T00:00:00");
+            let ahora = new Date();
+            let diferencia = ahora - fechaInicio;
+
+            let segundos = Math.floor(diferencia / 1000) % 60;
+            let minutos = Math.floor(diferencia / (1000 * 60)) % 60;
+            let horas = Math.floor(diferencia / (1000 * 60 * 60)) % 24;
+            let dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            let meses = Math.floor(dias / 30);
+            let años = Math.floor(meses / 12);
+            meses = meses % 12;
+            dias = dias % 30;
+
+            document.getElementById("contador").innerHTML = 
+                `${años} años, ${meses} meses, ${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos 💖`;
+        }
+
+        setInterval(actualizarContador, 1000);
+        actualizarContador();
+    </script>
+
+
+
+</body></html>
